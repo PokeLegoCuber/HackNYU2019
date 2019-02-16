@@ -1,0 +1,50 @@
+.main {
+	height: 100vh;
+	width: 100vw;
+	background-color: #66ccff;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.main .title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 11vh;
+	height: 15vh;
+	font-family: 'Comic Sans MS';
+	color: white;
+}
+
+.main .buttons {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	font-family: 'Comic Sans MS';
+	font-size: 8.5vh;
+	color: white;
+	user-select: none;
+}
+.main .buttons > .button {
+	padding: 20px 40px;
+	background-color: #66ff66;
+	border-radius: 10px;
+	margin: 3vh 0;
+	cursor: pointer;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main .buttons > .button:active {
+	background-color: #60f060;
+}

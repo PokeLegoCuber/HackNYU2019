@@ -1,0 +1,9 @@
+body {
+	margin: 0;
+}
+
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url("assets/comici.ttf");
+}
+
