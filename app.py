@@ -1,30 +1,15 @@
 from flask import Flask, request, json, session, redirect
 
-#import pymysql.cursors
+app = Flask(__name__, static_url_path='', static_folder='public')
 
-# conn = pymysql.connect(host='localhost',
-# 						port=8889,
-# 						user='root',
-# 						password='root',
-# 						db='PriCoSha',
-# 						charset='utf8mb4',
-# 						cursorclass=pymysql.cursors.DictCursor)
+@app.route("/api/upload")
+def upload():
+  return '~'
+# (name of item, state, price)
 
-app = Flask(__name__)
-app.secret_key = 'secret'
-
-@app.route("/upload")
-def process_code:
-
-    return (name of item, state, price)
-
-@app.route("/")
-def main():
-	if session.get('user'):
-		user = session.get('user')
-		return render_template('index.html', message="User {} is still signed in, click Log In to continue the session or to reach the Log Out button".format(user))
-	else:
-		return render_template('index.html')
+@app.route('/')
+def index():
+	return app.send_static_file('index.html')
 
 if __name__ == "__main__":
 	app.run()
