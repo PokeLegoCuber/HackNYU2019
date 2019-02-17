@@ -98,7 +98,7 @@ let loadPic = function(e) {
     if (success) {
       let info = x.data['info'];
       if (info) {
-        successLoader(x.data['info']);
+        successLoader(info);
       } else {
         // TBD
         alert('entry not found in db')
@@ -108,6 +108,6 @@ let loadPic = function(e) {
       failLoader()
     }
 	}).catch(x => {
-		console.log('fail', x)
+		failLoader()
 	})
 }
