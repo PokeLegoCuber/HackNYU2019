@@ -1,0 +1,65 @@
+.loader {
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	left: 0;
+  top: -100vh;
+  transition: background-color 1s linear, top 0.3s linear;
+	background-color: #66ccff;
+  display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.loader.show {
+  top: 0;
+}
+
+.loader.success {
+  background-color: #66ff66;
+}
+
+.loader.fail {
+  background-color: red;
+}
+
+.loader.fail .square, .loader.success .square {
+  width: 0;
+  height: 0;
+}
+
+.loader .text {
+	font-size: 8vh;
+	height: 15vh;
+	font-family: 'Comic Sans MS';
+	color: white;
+}
+
+.loader .text:not(.loading-text) {
+  display: none;
+}
+
+.loader.fail .fail-text, .loader.success .success-text{
+  display: initial;
+}
+
+.loader.fail .loading-text, .loader.success .loading-text{
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader .square {
+  transition: all 1s;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  animation: 1s spin linear infinite;
+}

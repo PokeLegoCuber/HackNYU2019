@@ -3,6 +3,8 @@
 <link rel="stylesheet" type="text/css" href="index.css">
 <link rel="stylesheet" type="text/css" href="main.css">
 <link rel="stylesheet" type="text/css" href="prompt.css">
+<link rel="stylesheet" type="text/css" href="loader.css">
+<link rel="stylesheet" type="text/css" href="info.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
 <script src="index.js"></script>
 </head>
@@ -20,6 +22,19 @@
 			list
 		</div>
 	</div>
+</div>
+<div class="info">
+  <div class="bag">
+  </div>
+  <div class="button back-btn" onclick="hideInfo()">
+    back
+  </div>
+</div>
+<div class="loader">
+  <div class="square"></div>
+  <div class="loading-text text">loading</div>
+  <div class="success-text text">success</div>
+  <div class="fail-text text">fail</div>
 </div>
 <div class="prompt">
 	<div class="title">

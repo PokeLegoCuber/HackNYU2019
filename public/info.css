@@ -1,0 +1,59 @@
+.info {
+  display: none;
+  position: fixed;
+	height: 100vh;
+	width: 100vw;
+  left: 0;
+  top: 0;
+	background-color: #66ccff;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.info.show {
+  display: flex;
+}
+
+.info .bag div {
+  margin: 20px 0;
+	font-size: 30px;
+	font-family: 'Comic Sans MS';
+  color: white;
+}
+
+.info .bag div.head {
+  margin-top: 60px;
+  font-size: 50px;
+}
+
+.info .bag div.head:first-child {
+  margin-top: 100px;
+}
+
+.info .button {
+	font-family: 'Comic Sans MS';
+	font-size: 8.5vh;
+	color: white;
+	user-select: none;
+
+
+	padding: 20px 40px;
+	background-color: #66ff66;
+	border-radius: 10px;
+	margin: 3vh 0;
+	cursor: pointer;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.info .back-btn {
+	margin: 3vh 2vh;
+}
+
+.info .button:active {
+	background-color: #60f060;
+}
