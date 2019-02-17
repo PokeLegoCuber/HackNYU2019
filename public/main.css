@@ -15,9 +15,14 @@
 	justify-content: center;
 	align-items: center;
 	font-size: 11vh;
-	height: 15vh;
+	height: 30vh;
+	width: 80vw;
 	font-family: 'Roboto', sans-serif;
 	color: white;
+	background-image: url('./assets/logo.png');
+	background-size: contain;
+	background-position: center; 
+	background-repeat: no-repeat;
 }
 
 .main .buttons {
