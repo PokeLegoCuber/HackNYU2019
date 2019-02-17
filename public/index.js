@@ -22,7 +22,7 @@ let loadPic = function(e) {
 			'Content-Type': 'multipart/form-data'
 		}
 	}).then(x => {
-		console.log('success', x)
+    alert(x.data['success'])
 	}).catch(x => {
 		console.log('fail', x)
 	})
