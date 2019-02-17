@@ -1,0 +1,75 @@
+.prompt {
+	transition: all 0.5s ease 0s;
+	position: fixed;
+	bottom: -200vh;
+	height: 100vh;
+	width: 100vw;
+	left: 0;
+
+	background-color: #66ccff;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.prompt.show {
+	bottom: 0;
+}
+
+.prompt .title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 8vh;
+	height: 15vh;
+	font-family: 'Comic Sans MS';
+	color: white;
+}
+
+.prompt input {
+	height: 12vh;
+	width: 70vw;
+	font-family: 'Comic Sans MS';
+	font-size: 8.5vh;
+}
+
+.prompt .buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: space-between;
+}
+
+.prompt .button {
+	font-family: 'Comic Sans MS';
+	font-size: 8.5vh;
+	color: white;
+	user-select: none;
+
+
+	padding: 20px 40px;
+	background-color: #66ff66;
+	border-radius: 10px;
+	margin: 3vh 0;
+	cursor: pointer;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.prompt .back-btn {
+	margin: 3vh 2vh;
+}
+
+.prompt .button:active {
+	background-color: #60f060;
+}
+
+.hiddencam {
+	display: none;
+}
