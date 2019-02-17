@@ -66,13 +66,13 @@ let showInfo = function(info) {
   }
   document.querySelector('.info .bag').insertAdjacentHTML('beforeend', `
     <div class="head">Amt made:</div>
-    <div>$${document.querySelector('.prompt input').value * 5}</div>
+    <div>$${document.querySelector('.prompt input').value * 0.05}</div>
   `);
 
   document.querySelector('.info').classList.add('show');
   totals.push({
     name: info['name'],
-    earn: (document.querySelector('.prompt input').value * 5)
+    earn: (document.querySelector('.prompt input').value * 0.05)
   })
   console.log(totals)
 }
