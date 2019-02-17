@@ -13,10 +13,20 @@ let invokeCam = function() {
 }
 
 let loadPic = function(e) {
-	let file = e.srcElement.files[0]
 	// document.querySelector('#output').src = URL.createObjectURL(file);
+	let file = e.srcElement.files[0]
+	let formData = new FormData();
+	formData.append('files[0]', file)
+	axios.post('/api/upload',formData, {
+		headers: {
+			'Content-Type': 'multipart/form-data'
+		}
+	}).then(x => {
+		console.log('success', x)
+	}).catch(x => {
+		console.log('fail', x)
+	})
 }
-
 // 	window.addEventListener('load', () => {
 // 	  document.querySelector('.start-btn').addEventListener('click', showPrompt)
 // 	  document.querySelector('.prompt .back-btn').addEventListener('click', hidePrompt)

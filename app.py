@@ -1,11 +1,26 @@
-from flask import Flask, request, json, session, redirect
+from flask import Flask, request, json, session, redirect, jsonify
+from werkzeug.utils import secure_filename
+import barcode
+import os
 
 app = Flask(__name__, static_url_path='', static_folder='public')
 
-@app.route("/api/upload")
+@app.route("/api/upload", methods = ['POST'])
 def upload():
-  return '~'
-# (name of item, state, price)
+	filestorage = request.files.to_dict()['files[0]']
+	safename = secure_filename(filestorage.filename)
+	filestorage.save(os.path.join('./temppic', safename))
+	code = barcode.getcode('./temppic/%s' % safename)
+	if (code):
+		info = barcode.getinfo(code)
+		return jsonify(
+			success=True,
+			info=info
+    )
+	else:
+		return jsonify(
+			success=False
+    )
 
 @app.route('/')
 def index():
