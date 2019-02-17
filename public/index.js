@@ -95,6 +95,7 @@ let showList = function() {
   for(let i = 0; i < totals.length; i+=1) {
     sum += totals[i]['earn']
   }
+  sum = Number(sum).toFixed(2);
   document.querySelector('.list .sum-bag').insertAdjacentHTML('beforeend', `
     <div>
       <div>Total</div>
@@ -130,7 +131,7 @@ let loadPic = function(e) {
         successLoader(info);
       } else {
         // TBD
-        alert('entry not found in db')
+        alert('Entry not found in DB')
         failLoader()
       }
     } else {

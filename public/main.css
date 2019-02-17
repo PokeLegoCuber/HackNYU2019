@@ -16,7 +16,7 @@
 	align-items: center;
 	font-size: 11vh;
 	height: 15vh;
-	font-family: 'Comic Sans MS';
+	font-family: 'Roboto', sans-serif;
 	color: white;
 }
 
@@ -27,7 +27,7 @@
 	justify-content: center;
 	align-items: center;
 
-	font-family: 'Comic Sans MS';
+	font-family: 'Roboto', sans-serif;
 	font-size: 8.5vh;
 	color: white;
 	user-select: none;

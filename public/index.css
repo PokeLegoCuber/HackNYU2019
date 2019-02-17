@@ -2,8 +2,5 @@ body {
 	margin: 0;
 }
 
-@font-face {
-  font-family: 'Comic Sans MS';
-  src: url("assets/comici.ttf");
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 

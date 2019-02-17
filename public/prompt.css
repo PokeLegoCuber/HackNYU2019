@@ -25,14 +25,14 @@
 	align-items: center;
 	font-size: 8vh;
 	height: 15vh;
-	font-family: 'Comic Sans MS';
+	font-family: 'Roboto', sans-serif;
 	color: white;
 }
 
 .prompt input {
 	height: 12vh;
 	width: 70vw;
-	font-family: 'Comic Sans MS';
+	font-family: 'Roboto', sans-serif;
 	font-size: 8.5vh;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .prompt .button {
-	font-family: 'Comic Sans MS';
+	font-family: 'Roboto', sans-serif;
 	font-size: 8.5vh;
 	color: white;
 	user-select: none;

@@ -16,7 +16,7 @@
 }
 
 .list .button {
-	font-family: 'Comic Sans MS';
+	font-family: 'Roboto', sans-serif;
 	font-size: 8.5vh;
 	color: white;
 	user-select: none;
@@ -44,7 +44,7 @@
 
 .list .bag {
   width: 80vw;
-	font-family: 'Comic Sans MS';
+	font-family: 'Roboto', sans-serif;
 	
 	color: white;
 }

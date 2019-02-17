@@ -17,7 +17,7 @@
 
 .info .bag div {
 	font-size: 3vh;
-	font-family: 'Comic Sans MS';
+	font-family: 'Roboto', sans-serif;
   color: white;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .info .button {
-	font-family: 'Comic Sans MS';
+	font-family: 'Roboto', sans-serif;
 	font-size: 8.5vh;
 	color: white;
 	user-select: none;
