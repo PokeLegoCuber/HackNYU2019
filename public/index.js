@@ -82,6 +82,35 @@ let hideInfo = function() {
 	document.querySelector('.info').classList.remove('show');
 }
 
+let showList = function() {
+  totals.forEach((x) => {
+    document.querySelector('.list .each-bag').insertAdjacentHTML('beforeend', `
+      <div>
+        <div>${x['name']}</div>
+        <div>$${x['earn']}</div>
+      </div>
+    `);
+  })
+  let sum = 0;
+  for(let i = 0; i < totals.length; i+=1) {
+    sum += totals[i]['earn']
+  }
+  document.querySelector('.list .sum-bag').insertAdjacentHTML('beforeend', `
+    <div>
+      <div>Total</div>
+      <div>$${sum}</div>
+    </div>
+  `);
+  document.querySelector('.list').classList.add('show')
+}
+
+let hideList = function() {
+  document.querySelector('.list').classList.remove('show')
+  document.querySelectorAll('.list .bag').forEach((x) => {
+    x.innerHTML = ''
+  })
+}
+
 let loadPic = function(e) {
   // document.querySelector('#output').src = URL.createObjectURL(file);
   hidePrompt()

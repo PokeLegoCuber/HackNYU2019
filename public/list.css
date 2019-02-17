@@ -1,0 +1,66 @@
+.list {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  background-color: #66ccff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list.show {
+  display: flex;
+}
+
+.list .button {
+	font-family: 'Comic Sans MS';
+	font-size: 8.5vh;
+	color: white;
+	user-select: none;
+
+
+	padding: 20px 40px;
+	background-color: #66ff66;
+	border-radius: 10px;
+	margin: 3vh 0;
+	cursor: pointer;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.list .back-btn {
+	margin: 3vh 2vh;
+}
+
+.list .button:active {
+	background-color: #60f060;
+}
+
+.list .bag {
+  width: 80vw;
+	font-family: 'Comic Sans MS';
+	
+	color: white;
+}
+
+.list .bag > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.list .each-bag {
+  font-size: 2.5vh;
+}
+
+.list .sum-bag {
+  font-size: 6.5vh;
+  border-top: 3px solid red;
+}
