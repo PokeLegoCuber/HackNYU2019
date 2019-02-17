@@ -11,7 +11,7 @@ def getcode(filename):
     return False
 
 def getinfo(code):
-  infojson = open('infomap.json').read()
+  infojson = open('data.json').read()
   infomap = json.loads(infojson)
   infolist = [e for e in infomap if e['upc'] == code]
   if len(infolist) == 1:
