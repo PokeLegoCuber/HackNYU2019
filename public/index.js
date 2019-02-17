@@ -43,8 +43,6 @@ let showInfo = function(info) {
   document.querySelector('.info .bag').insertAdjacentHTML('beforeend', `
     <div class="head">Name:</div>
     <div>${info['name']}</div>
-    <div class="head">upc:</div>
-    <div>${info['upc']}</div>
   `);
   if(info['state1'].length !== 0) {
     document.querySelector('.info .bag').insertAdjacentHTML('beforeend', `

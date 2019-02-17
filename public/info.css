@@ -21,8 +21,13 @@
   color: white;
 }
 
+.info .bag div:not(.head) {
+	border-bottom: 6px solid white;
+}
+
 .info .bag div.head {
-  font-size: 4vh;
+	font-size: 4vh;
+	font-weight: bold;
 }
 
 .info .bag div.head:first-child {
