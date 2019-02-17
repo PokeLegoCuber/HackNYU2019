@@ -2,13 +2,14 @@ from flask import Flask, request, json, session, redirect, jsonify
 from werkzeug.utils import secure_filename
 import barcode
 import os
+import uuid
 
 app = Flask(__name__, static_url_path='', static_folder='public')
 
 @app.route("/api/upload", methods = ['POST'])
 def upload():
 	filestorage = request.files.to_dict()['files[0]']
-	safename = secure_filename(filestorage.filename)
+	safename = uuid.uuid4().hex+''+secure_filename(filestorage.filename)
 	filestorage.save(os.path.join('./temppic', safename))
 	code = barcode.getcode('./temppic/%s' % safename)
 	if (code):
