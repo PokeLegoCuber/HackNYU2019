@@ -1,9 +1,9 @@
 [
-    {
-        "upc": "0894379002655",
-        "name": "Avitae Caffeine + Water (Mandarin Passion Fruit)",
-        "state5": ["CT","MA","ME","NY","VT"],
-        "state10":["CA","MI","OR"],
-        "state1": []
-    }
+  {
+    "upc": "0894379002655",
+    "name": "Avitae Caffeine + Water (Mandarin Passion Fruit)",
+    "state5": ["CT","MA","ME","NY","VT"],
+    "state10":["CA","MI","OR"],
+    "state1": []
+  }
 ]
