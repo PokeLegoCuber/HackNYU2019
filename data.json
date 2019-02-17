@@ -1,0 +1,89 @@
+[
+	{
+		"upc": "0611269991000",
+		"name": "Red Bull Original 8.4 Oz",
+		"state5": ["HI","VT","ME","NY","CT"],
+		"state10": ["CA","MI","OR"],
+		"state1": ["WV"]
+	},
+
+	{
+		"upc": "0611269101713",
+		"name": "Red Bull Sugarfree Energy Drink 8.4 Oz",
+		"state5": ["HI","VT","ME","NY","CT"],
+		"state10": ["CA","MI","OR"],
+		"state1": ["WV"]
+	},
+
+	{
+		"upc": "0611269283105",
+		"name": "Red Bull Editions - The Peach Edition(Peach-Nectanrine), 12fl.oz",
+		"state5": ["HI","VT","ME","NY","CT"],
+		"state10": ["CA","MI","OR"],
+		"state1": ["WV"]
+	},
+
+	{
+		"upc": "0611269283402",
+		"name": "Red Bull Editions - The Peach Edition(Crisp Pear), 12fl.oz",
+		"state5": ["HI","VT","ME","NY","CT"],
+		"state10": ["CA","MI","OR"],
+		"state1": ["WV"]
+	},
+	{
+		"upc": "0894379002655",
+		"name": "Avitae Caffeine + Water (Strawberry Kiwi)",
+		"state5": ["CT","MA","ME","NY","VT"],
+		"state10":["CA","MI","OR"],
+		"state1": []
+	},
+
+	{
+		"upc": "0894379002679",
+		"name": "Avitae Caffeine + Water (Raspberry Lime)",
+		"state5": ["CT","MA","ME","NY","VT"],
+		"state10":["CA","MI","OR"],
+		"state1": []
+	},
+
+	{
+		"upc": "0894379002686",
+		"name": "Avitae Caffeine + Water (Mandarin Passion Fruit)",
+		"state5": ["CT","MA","ME","NY","VT"],
+		"state10":["CA","MI","OR"],
+		"state1": []
+	},
+
+	{
+		"upc": "0858831006049",
+		"name": "Hotshot Hot Chocolate",
+		"state5": ["ME","VT","MA","NY","HI","IA","CT"],
+		"state10":["CA","MI"],
+		"state1": []
+	},
+
+	{
+		"upc": "0858831006025",
+		"name": "Hotshot French Vanilla Coffee",
+		"state5": ["ME","VT","MA","NY","HI","IA","CT"],
+		"state10":["CA","MI"],
+		"state1": []
+	},
+
+	{
+		"upc": "0858831006001",
+		"name": "Hotshot Black Coffee",
+		"state5": ["ME","VT","MA","NY","HI","IA","CT"],
+		"state10":["CA","MI"],
+		"state1": []
+	},
+
+	{
+		"upc": "0657227000124",
+		"name": "Essentia Ionized Alkaline 9.5 pH Water",
+		"state5": ["ME","HI","NY","CT"],
+		"state10":["OR","CA"],
+		"state1": []
+	}
+
+]
